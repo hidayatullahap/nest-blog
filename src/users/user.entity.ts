@@ -5,8 +5,8 @@ export class User {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ length: 25 })
-    full_name:string;
+    @Column({ length: 255 })
+    first_name:string;
 
     @Column('date') 
     birthday:Date;
