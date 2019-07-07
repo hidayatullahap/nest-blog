@@ -1,10 +1,9 @@
-import { Controller, Post, Body, Get, Put, Delete,Param} from '@nestjs/common';
+import { Controller, Post, Body, Get, Put, Delete, Param } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { User } from '../entities/user.entity';
 
 @Controller('users')
 export class UsersController {
-
     constructor(private service: UsersService) { }
 
     @Get(':id')

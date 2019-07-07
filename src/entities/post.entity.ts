@@ -5,20 +5,21 @@ export class Post {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ length: 255 })
-    first_name:string;
+    @Column()
+    title: string;
 
-    @Column('date') 
-    birthday:Date;
+    @Column({ nullable: true })
+    content: string;
 
-    @Column({
-        default: false
-    })
-    is_active:boolean;
+    @Column()
+    slug: string;
+
+    @Column({ default: 0 })
+    view: number;
 
     @CreateDateColumn()
-    created_at:Date;
+    created_at: Date;
 
     @UpdateDateColumn()
-    updated_at:Date
+    updated_at: Date
 }
