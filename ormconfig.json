@@ -5,7 +5,7 @@
     "username": "root",
     "password": "12345678",
     "database": "blog",
-    "entities": ["src/**/**.entity{.ts,.js}"],
+    "entities": ["src/entities/**/**.entity{.ts,.js}"],
     "migrations": ["src/migration/**/*{.ts,.js}"],
     "synchronize": false
   }

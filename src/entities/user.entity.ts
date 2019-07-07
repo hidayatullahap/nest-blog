@@ -11,7 +11,9 @@ export class User {
     @Column('date') 
     birthday:Date;
 
-    @Column() 
+    @Column({
+        default: false
+    })
     is_active:boolean;
 
     @CreateDateColumn()
